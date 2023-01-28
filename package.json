@@ -1,0 +1,22 @@
+{
+  "name": "mp4-edit-metadata",
+  "version": "1.0.0",
+  "description": "Edit mp4 file metadata via CLI in your terminal.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "execa": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}
