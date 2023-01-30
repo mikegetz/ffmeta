@@ -1,7 +1,7 @@
 {
-  "name": "mp4-edit-metadata",
+  "name": "mpeg-edit-metadata",
   "version": "1.0.0",
-  "description": "Edit mp4 file metadata via CLI in your terminal.",
+  "description": "Edit mpeg file metadata via CLI in your terminal.",
   "main": "build/index.js",
   "types": "build/index.js",
   "engines": {
