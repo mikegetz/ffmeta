@@ -6,6 +6,6 @@ export type PackageJson = {
   description: string
 }
 
-const pjson = packageJson as PackageJson;
+const pjson: PackageJson = packageJson;
 
 export default pjson;
