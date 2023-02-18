@@ -1,14 +1,19 @@
-import execa from 'execa';
+import * as child from 'child_process';
 
-export type ExecaReturn = {
-  stdout: string,
-  stderr: string,
-}
-
-const exec = async (command: string): Promise<ExecaReturn> => {
-  const result = await execa.command(command);
-  const execaReturn = { stdout: result.stdout, stderr: result.stderr, };
-  return execaReturn;
+const exec = (command: string): Promise<string> => {
+  return new Promise((resolve) => {
+    child.exec(command, (error, stdout, stderr) => {
+      if (error?.stack) {
+        resolve(error.stack);
+        return;
+      }
+      if (stderr) {
+        resolve(stderr);
+        return;
+      }
+      resolve(stdout);
+    });
+  });
 };
 
 export default exec;

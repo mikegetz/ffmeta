@@ -1,1 +1,1 @@
-export { default as exec, ExecaReturn, } from './exec';
+export { default as exec, } from './exec';
