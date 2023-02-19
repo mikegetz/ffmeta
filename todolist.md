@@ -1,7 +1,13 @@
-- write edit command
-- convert to rotini from commander
+- ~~write edit command~~
+- add force overwrite flag to edit command
+- add check for existing file to overwrite and warn with exit without force flag
+- change output file format to suffix with timestamp
+- add output suffix flag to edit command for custom suffix
+- if a packaged version of ffprobe/ffmpeg is not being included a minimum path check will be required
+- add the ability to supply a custom path via environment variable (this way a custom path can be provided and does not require the shell to have the executable available in the shell's path)
+- create docker image with supplied dependent ffmpeg package
+- convert to rotini from commander (requires 1.2 release for variadic flags - not released yet)
 - determine if finding a way to package in a version of ffprobe or ffmpeg (least needed) is best and/or needed
   - if this is being packaged in determine whether or not to compile from source or just include pre-compiled executable (accounting for 3 operating systems is a lot)
   - maybe only offer this in a docker container?
-- if a packaged version of ffprobe/ffmpeg is not being included a minimum path check will be required
-- add the ability to supply a custom path via environment variable (this way a custom path can be provided and does not require the shell to have the executable available in the shell's path)
+
