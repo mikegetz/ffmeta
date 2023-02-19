@@ -1,0 +1,7 @@
+- write edit command
+- convert to rotini
+- determine if finding a way to package in a version of ffprobe or ffmpeg (least needed) is best and/or needed
+  - if this is being packaged in determine whether or not to compile from source or just include pre-compiled executable (accounting for 3 operating systems is a lot)
+  - maybe only offer this in a docker container?
+- if a packaged version of ffprobe/ffmpeg is not being included a minimum path check will be required
+- add the ability to supply a custom path via environment variable (this way a custom path can be provided and does not require the shell to have the executable available in the shell's path)
