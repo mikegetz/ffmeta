@@ -7,7 +7,7 @@ const editMpegFileMetadata = async (file: string, metadata: [string]): Promise<s
   const ext = path.extname(file);
   const fileExtReplaceRegex = new RegExp('\\' + ext, 'g');
   const fileExtRemoved = file.replace(fileExtReplaceRegex, '');
-  const command = `ffmpeg -i ${file} -metadata ${metadata.join(' -metadata ')} -codec copy ${fileExtRemoved}-${mpegEditedSuffix}${ext}`;
+  const command = `ffmpeg -y -i ${file} -metadata ${metadata.join(' -metadata ')} -codec copy ${fileExtRemoved}-${mpegEditedSuffix}${ext}`;
   const result: string = await exec(command);
   return result;
 };

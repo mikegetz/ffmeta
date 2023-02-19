@@ -1,11 +1,11 @@
 {
-  "name": "ffmpegedit",
+  "name": "ffmeta",
   "version": "1.0.0",
   "description": "Edit mpeg file metadata via a simple CLI in your terminal.",
   "main": "build/index.js",
   "types": "build/index.js",
   "bin": {
-    "ffmpegedit": "dev-build/src/index.js"
+    "ffmeta": "dev-build/src/index.js"
   },
   "engines": {
     "node": ">=12"
