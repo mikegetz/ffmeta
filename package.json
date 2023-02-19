@@ -4,6 +4,9 @@
   "description": "Edit mpeg file metadata via a simple CLI in your terminal.",
   "main": "build/index.js",
   "types": "build/index.js",
+  "bin": {
+    "ffmpegedit": "dev-build/src/index.js"
+  },
   "engines": {
     "node": ">=12"
   },
