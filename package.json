@@ -1,7 +1,7 @@
 {
-  "name": "mpeg-edit-metadata",
+  "name": "ffmpegedit",
   "version": "1.0.0",
-  "description": "Edit mpeg file metadata via CLI in your terminal.",
+  "description": "Edit mpeg file metadata via a simple CLI in your terminal.",
   "main": "build/index.js",
   "types": "build/index.js",
   "engines": {
