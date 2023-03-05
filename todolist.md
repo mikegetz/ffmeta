@@ -1,7 +1,7 @@
 - ~~write edit command~~
 - add force overwrite flag to edit command
 - add check for existing file to overwrite and warn with exit without force flag
-- change output file format to suffix with timestamp
+- ~~change output file format to suffix with timestamp~~
 - add output suffix flag to edit command for custom suffix
 - if a packaged version of ffprobe/ffmpeg is not being included a minimum path check will be required
 - add the ability to supply a custom path via environment variable (this way a custom path can be provided and does not require the shell to have the executable available in the shell's path)
